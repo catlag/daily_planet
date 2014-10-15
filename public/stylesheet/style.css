@@ -1,0 +1,30 @@
+body { 
+	padding-top: 70px; 
+	font-family: 'Raleway', sans-serif;
+}
+
+.body {
+	height: 200px;                       
+    width:  600px;
+    text-indent: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+.readMore {
+	font-size: 12px;
+}
+
+#company {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 60px;
+}
+
+.kittyKat {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px
+}
+

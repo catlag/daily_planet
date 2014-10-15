@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+		<meta charset="UTF-8">
 	<title>Document</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='/stylesheet/style.css' rel='stylesheet'  type='text/css'>
 </head>
 <body>
-<a href="/">Home</a></h4>
-<a href="/about">About Page</a></h4>
-<a href="/contact">Contact</a></h4>
-<a href="/articles">Articles</a></h4>
-<a href="/articles/new">Post New Article</a></h4>
-
-	<% if(typeof article === 'undefined'){%>
-	<h4>NO article by this name...go <a href="/">Home</a></h4>
-	<% } else {%>
-	<p>
-		<br>
-		<h1><%=article.title%></h1>
-		<br>
-		<%=article.body%>
-	</p>
-	<% }%>
-
+	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+		<div class="container">
+			<a class="navbar-brand" href="/">Daily Planet</a>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="/about">About Us</a></li>
+				<li class="active"><a href="/contact">Contact</a></li>
+				<li class="active"><a href="/articles">Articles</a></li>
+				<li class="active"><a href="/articles/new">Post New Article</a></li>
+			</ul>
+		        
+		 </div>
+	</nav>
+	<div class="container">
+		<% if(typeof article === 'undefined'){%>
+		<h4>NO article by this name...go <a href="/">Home</a></h4>
+		<% } else {%>
+		<p>
+			<br>
+			<h1><%=article.title%></h1>
+			<br>
+			<%=article.body%>
+		</p>
+		<% }%>
+	</div>
 	
 </body>
 </html>
