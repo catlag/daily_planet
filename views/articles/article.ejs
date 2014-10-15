@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<a href="/">Home</a></h4>
+<a href="/about">About Page</a></h4>
+<a href="/contact">Contact</a></h4>
+<a href="/articles">Articles</a></h4>
+<a href="/articles/new">Post New Article</a></h4>
+
+	<% if(typeof article === 'undefined'){%>
+	<h4>NO article by this name...go <a href="/">Home</a></h4>
+	<% } else {%>
+	<p>
+		<br>
+		<h1><%=article.title%></h1>
+		<br>
+		<%=article.body%>
+	</p>
+	<% }%>
+
+	
+</body>
+</html>
